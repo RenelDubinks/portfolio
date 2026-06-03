@@ -83,7 +83,7 @@ a {
 
 .hero-box {
 	grid-column: 1 / 3;
-	background-color: #0055ff;
+	background-color: #1a1a24;
 	justify-content: center;
 }
 
@@ -108,6 +108,7 @@ a {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;		/*Recadre le photo*/
+	object-position: top;
 	display: block;
 }
 
@@ -213,5 +214,10 @@ a {
 
 	.profile-box{
 		height: 300px;		/*hauteur fixe pour la photo sur mobile.*/
+	}
+
+	.contact-links a {
+		margin-right: 8px;
+		font-size: 0.85rem;
 	}
 }
