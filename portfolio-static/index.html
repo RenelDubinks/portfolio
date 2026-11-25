@@ -1,0 +1,721 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#fbfcfd" />
+    <meta
+      name="description"
+      content="NTOUZO'O Etienne Renel Développeur Web Backend &amp; Designer à Douala. Développement, design, formation et création."
+    />
+    <link rel="icon" type="image/png" href="./assets/logo.png" />
+    <title>Renel — Développeur Backend &amp; Designer</title>
+
+    <!-- Polices Inter & Space Grotesk -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <header class="header">
+
+      <nav class="nav" id="main-nav" aria-label="Navigation principale">
+        <a href="#about" data-i18n="nav.0">À propos</a>
+        <a href="#services" data-i18n="nav.1">Services</a>
+        <a href="#certifications" data-i18n="nav.2">Certifications</a>
+        <a href="#projects" data-i18n="nav.3">Projets</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="nav-contact" href="#contact">
+          <span data-i18n="navContact">Contact</span>
+          <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+        </a>
+
+        <div class="language">
+          <button
+            type="button"
+            id="lang-toggle"
+            aria-expanded="false"
+            aria-controls="lang-menu"
+          >
+            <span id="current-lang">FR</span>
+            <i class="bi bi-chevron-down" aria-hidden="true"></i>
+          </button>
+          <div class="language-menu" id="lang-menu" hidden>
+            <button type="button" data-lang="EN">EN</button>
+            <button type="button" data-lang="DE">DE</button>
+          </div>
+        </div>
+
+        <button
+          type="button"
+          class="mobile-toggle"
+          id="mobile-toggle"
+          aria-label="Menu"
+          aria-expanded="false"
+          aria-controls="main-nav"
+        >
+          <i class="bi bi-list" id="mobile-toggle-icon" aria-hidden="true"></i>
+        </button>
+      </div>
+    </header>
+
+    <main>
+
+      <section class="hero" id="home">
+        <div class="hero-copy">
+
+          <p class="eyebrow hero-hello" data-i18n="hello">Salut, je suis</p>
+
+          <h1>
+            NTOUZO'O
+            <br />
+            ETIENNE RENEL<span></span>
+          </h1>
+
+          <h2>
+            <span data-i18n="role">Développeur Web</span>
+            <br />
+            <span data-i18n="role2">Backend &amp; Designer.</span>
+          </h2>
+
+          <p class="hero-intro" data-i18n="intro">
+            De la logique du code à la force du visuel, je transforme vos idées en
+            expériences utiles et singulières
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#contact" class="button primary">
+              <span data-i18n="contactBtn">CONTACT</span>
+              <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+            </a>
+            <a href="./assets/CV-Renel.pdf" download class="button outline">
+              <span data-i18n="downloadCv">DOWNLOAD CV</span>
+              <i class="bi bi-download" aria-hidden="true"></i>
+            </a>
+          </div>
+
+          <a class="discover" href="#about">
+            <span aria-hidden="true"><i class="bi bi-arrow-down"></i></span>
+            <span data-i18n="discover">DÉCOUVRIR MON UNIVERS</span>
+          </a>
+        </div>
+
+        <div class="hero-visual">
+          <div class="portrait-bg">
+            <div class="dot-grid" aria-hidden="true"></div>
+            <span class="big-outline" aria-hidden="true">0'</span>
+            <div class="orbit" aria-hidden="true"></div>
+            <span class="geometry" aria-hidden="true">&gt;</span>
+          </div>
+
+          <img
+            class="portrait"
+            src="./assets/portrait.png"
+            alt="NTOUZO'O Etienne Renel"
+          />
+
+          <div class="floating-label code-label">
+            <span class="floating-icon">
+              <i class="bi bi-code-slash" aria-hidden="true"></i>
+            </span>
+            <div>
+              Code with purpose.
+            </div>
+          </div>
+
+          <div class="floating-label design-label">
+            <span class="floating-icon">
+              <i class="bi bi-gem" aria-hidden="true"></i>
+            </span>
+            <div>Design with intention.</div>
+          </div>
+
+          <div class="visual-bottom">
+            <span>
+              <span data-i18n="based">BASÉ À DOUALA, CAMEROUN</span>
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <!-- MARQUEE DES CASQUETTES JUSTE SOUS LA HERO SECTION -->
+      <div class="marquee" aria-label="Casquettes et rôles">
+        <div>
+          <div id="marquee-track-1">
+            <span>Développeur Web<b>*</b></span>
+            <span>Designer<b>*</b></span>
+            <span>Formateur Web<b>*</b></span>
+            <span>Maître de cérémonie<b>*</b></span>
+            <span>Traducteur<b>*</b></span>
+            <span>Rédacteur de livres<b>*</b></span>
+          </div>
+          <div id="marquee-track-2" aria-hidden="true">
+            <span>Développeur Web<b>*</b></span>
+            <span>Designer<b>*</b></span>
+            <span>Formateur Web<b>*</b></span>
+            <span>Maître de cérémonie<b>*</b></span>
+            <span>Traducteur<b>*</b></span>
+            <span>Rédacteur de livres<b>*</b></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- À PROPOS & SAVOIR-FAIRE -->
+      <section id="about" class="about section">
+        <div class="section-top">
+          <span class="section-tag" data-i18n="nav.0">À propos</span>
+        </div>
+
+        <div class="section-heading">
+          <h2 data-i18n="about">Plus qu'une passion.\nUne exigence.</h2>
+          <p data-i18n="aboutText">
+            Curieux par nature, créateur par conviction. Je relie la technologie, le
+            design et la transmission pour donner vie à des projets qui ont du sens.
+          </p>
+        </div>
+
+        <div
+          class="carousel"
+          id="expertise-carousel"
+          tabindex="0"
+          aria-label="Cartes d'expertise"
+        >
+          <!-- Carte 01 / 06 : Backend -->
+          <article class="expertise-card">
+            <div class="card-top">
+              <i class="bi bi-code-slash" aria-hidden="true"></i>
+            </div>
+            <h3 data-i18n="roleBackendCard">Développeur Web Backend</h3>
+            <p class="eyebrow" data-i18n="skills">COMPÉTENCES</p>
+            <div class="skill-grid" data-skill-group="backend"></div>
+          </article>
+
+          <!-- Carte 02 / 06 : Designer -->
+          <article class="expertise-card">
+            <div class="card-top">
+              <i class="bi bi-gem" aria-hidden="true"></i>
+            </div>
+            <h3>Designer</h3>
+            <p class="eyebrow" data-i18n="skills">COMPÉTENCES</p>
+            <div class="skill-grid" data-skill-group="design"></div>
+            <div class="design-motif" aria-hidden="true">
+              Aa<span></span>
+            </div>
+          </article>
+
+          <!-- Carte 03 / 06 : Formateur Web -->
+          <article class="expertise-card">
+            <div class="card-top">
+              <i class="bi bi-mortarboard" aria-hidden="true"></i>
+            </div>
+            <h3 data-i18n="roles.2">Formateur Web</h3>
+            <p class="card-description" data-i18n="instructor">
+              Fondateur d'O'School, une startup dédiée à l'apprentissage autodidacte du
+              développement web.
+            </p>
+            <div class="school-mark">
+              0'<span>School</span>
+            </div>
+            <div class="tool-list">
+              <span><i class="bi bi-mortarboard" aria-hidden="true"></i>YouTube</span>
+              <span><i class="bi bi-mortarboard" aria-hidden="true"></i>Google Meet</span>
+              <span><i class="bi bi-mortarboard" aria-hidden="true"></i>Slack</span>
+              <span><i class="bi bi-mortarboard" aria-hidden="true"></i>Discord</span>
+            </div>
+          </article>
+
+          <!-- Carte 04 / 06 : Maître de cérémonie -->
+          <article class="expertise-card">
+            <div class="card-top">
+              <i class="bi bi-mic" aria-hidden="true"></i>
+            </div>
+            <h3 data-i18n="roles.3">Maître de cérémonie</h3>
+            <p class="card-description" data-i18n="mc">
+              De l'éloquence, de la prestance et une énergie au service de chaque
+              événement.
+            </p>
+            <ul class="events" id="mc-events">
+              <li>Accueil des nouveaux étudiants IUT Douala Oct. 2026</li>
+              <li>Bilinguisme &amp; multiculturalisme Lycée de Bétaré-Oya Fév. 2024</li>
+              <li>Réception des meilleurs élèves Sous-préfecture de Bétaré-Oya Fév. 2026</li>
+              <li>Meilleur élève et MC (2024)</li>
+              <li>Mariage d'un cadre de la CRTV Ekounou Cephta Juil. 2026</li>
+            </ul>
+          </article>
+
+          <!-- Carte 05 / 06 : Traducteur -->
+          <article class="expertise-card">
+            <div class="card-top">
+              <i class="bi bi-globe" aria-hidden="true"></i>
+            </div>
+            <h3 data-i18n="roles.4">Traducteur</h3>
+            <p class="card-description" data-i18n="translation">
+              Interprète entre micro-investisseurs allemands et commerçants camerounais
+              en 2026.
+            </p>
+            <div class="language-list" id="language-list">
+              <div><span>FR</span> Français Langue natale</div>
+              <div><span>EN</span> Anglais Professionnel</div>
+              <div><span>DE</span> Allemand Intermédiaire</div>
+            </div>
+          </article>
+
+          <!-- Carte 06 / 06 : Rédacteur de livres -->
+          <article class="expertise-card">
+            <div class="card-top">
+              <i class="bi bi-vector-pen" aria-hidden="true"></i>
+            </div>
+            <h3 data-i18n="roles.5">Rédacteur de livres</h3>
+            <p class="card-description" data-i18n="writer">
+              Des documents professionnels et techniques précis. Principal rédacteur du
+              projet académique MediCare.
+            </p>
+            <div class="skill-grid" data-skill-group="writing"></div>
+            <div class="doc-links">
+              <span data-i18n="writingExamples">Voir des exemples de rédaction</span>
+              <a href="/assets/MediCare.pdf" download>
+                <span>MediCare</span>
+                <i class="bi bi-download" aria-hidden="true"></i>
+              </a>
+              <a href="/assets/OSchool.pdf" download>
+                <span>0'School</span>
+                <i class="bi bi-download" aria-hidden="true"></i>
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <div class="carousel-controls">
+          <div>
+            <button type="button" id="carousel-toggle" aria-label="Mettre en pause">
+              <i class="bi bi-pause-fill" id="carousel-toggle-icon" aria-hidden="true"></i>
+            </button>
+            <button type="button" id="carousel-prev" aria-label="Précédent">
+              <i class="bi bi-chevron-left" aria-hidden="true"></i>
+            </button>
+            <button type="button" id="carousel-next" aria-label="Suivant">
+              <i class="bi bi-chevron-right" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVICES -->
+      <section id="services" class="section services">
+        <div class="section-top">
+          <span class="section-tag" data-i18n="nav.1">Services</span>
+          <span class="tiny-star" aria-hidden="true">*</span>
+        </div>
+
+        <div class="services-layout">
+          <div>
+            <h2 data-i18n="services">Six expertises avec \ndes possibilités infinies.</h2>
+            <p data-i18n="serviceText">
+              Une vision transversale pour vous accompagner, de la première idée au
+              dernier détail.
+            </p>
+            <a href="#contact" class="text-link">
+              <span data-i18n="contact">Parlons de votre projet</span>
+              <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+            </a>
+            <div class="service-art" aria-hidden="true">
+              <span>*</span>
+            </div>
+          </div>
+
+          <div class="honeycomb" id="services-honeycomb"></div>
+        </div>
+      </section>
+
+      <!-- CERTIFICATIONS -->
+      <section class="section certifications" id="certifications">
+        <div class="section-top">
+          <span class="section-tag" data-i18n="nav.2">Certifications</span>
+        </div>
+
+        <div class="cert-layout">
+          <h2>
+            <span data-i18n="certTitle">La curiosité,\ncertifiée.</span>
+          </h2>
+
+          <div class="cert-list">
+            <article>
+              <div class="harvard">
+                H
+                <span>
+                  HARVARD
+                  <br />
+                  UNIVERSITY
+                </span>
+              </div>
+              <div class="cert-name">
+                <span class="status">
+                  <span data-i18n="earned">OBTENUE EN 2026</span>
+                </span>
+                <h3>CS50P</h3>
+                <p>Introduction to Programming with Python</p>
+                <div class="cert-links">
+                  <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://cs50.harvard.edu/certificates/c3a05620-7517-4a3b-98b5-ef4d5afd0a8a"
+                  >
+                    <span data-i18n="verify">Voir la certification</span>
+                    <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+                  </a>
+                  <a href="./assets/CS50P.pdf" download aria-label="Télécharger CS50P PDF">
+                    <span data-i18n="download">Télécharger</span>
+                    <i class="bi bi-download" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+              <span class="cert-year">Obtenue en Juillet 2026</span>
+            </article>
+
+            <article>
+              <div class="harvard muted">
+                H
+                <span>
+                  HARVARD
+                  <br />
+                  UNIVERSITY
+                </span>
+              </div>
+              <div class="cert-name">
+                <span class="status progress">
+                  <i aria-hidden="true"></i>
+                  <span data-i18n="ongoing">EN COURS</span>
+                </span>
+                <h3>CS50W</h3>
+                <p>
+                  Introduction to Web Programming
+                  <br />
+                  with Python and JavaScript
+                </p>
+              </div>
+              <span class="cert-year">prévue pour Février 2027</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJETS -->
+      <section class="section projects" id="projects">
+        <div class="section-top">
+          <span class="section-tag" data-i18n="nav.3">Projets</span>
+        </div>
+
+        <div class="section-heading">
+          <h2 data-i18n="projectsTitle">Des idées aux\nréalisations.</h2>
+        </div>
+
+        <div class="project-grid">
+          <!-- Projet 01 : 0'School - CLI -->
+          <article class="project">
+            <div class="project-image terminal-cover">
+              <div class="terminal">
+                <div class="terminal-bar">
+                  <i aria-hidden="true"></i>
+                  <i aria-hidden="true"></i>
+                  <i aria-hidden="true"></i>
+                  <span>oschool — python</span>
+                </div>
+                <div class="terminal-body">
+                  <p><b>&rarr;</b> python project.py</p>
+                  <strong>
+                    O'School<span>INVOICE GENERATOR</span>
+                  </strong>
+                  <p>
+                    Customer name: <em>John Doe</em>
+                    <br />
+                    Course: <em>Python Development</em>
+                    <br />
+                    Amount: <em>150.00 USD</em>
+                  </p>
+                  <p class="terminal-success">
+                    Invoice generated successfully.
+                    <span class="cursor" aria-hidden="true">_</span>
+                  </p>
+                </div>
+              </div>
+              <span class="cover-index">01 / DEVELOPMENT</span>
+            </div>
+
+            <div class="project-meta">
+              <span>PYTHON &middot; CLI &middot; CS50P</span>
+              <span>2026</span>
+            </div>
+            <h3>0'School <span>- CLI</span></h3>
+            <p data-i18n="cli">
+              Un outil en ligne de commande qui transforme les informations utilisateur
+              en factures. Projet final CS50P.
+            </p>
+            <div class="project-links">
+              <a
+                href="https://youtu.be/aZAu3bZ67do?si=v4bp2zH_X38Izhgm"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <span>&#9655; <span data-i18n="demo">Voir la démo</span></span>
+                <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+              </a>
+              <a
+                href="https://github.com/RenelDubinks/oschool"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <span data-i18n="code">Code source</span>
+                <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- Projet 02 : 0'School - Web -->
+          <article class="project">
+            <div class="project-image web-cover">
+              <div class="mini-web">
+                <div class="mini-nav">
+                  <b>0'School.</b>
+                  <span>Learn. Build. Grow.</span>
+                </div>
+                <div class="mini-body">
+                  <span>YOUR NEXT CHAPTER STARTS HERE</span>
+                  <h4>
+                    Build your skills.
+                    <br />
+                    Shape your future<span>.</span>
+                  </h4>
+                  <span class="mini-button">Start learning</span>
+                  <div class="mini-courses">
+                    <i>Py</i>
+                    <i>&lt;/&gt;</i>
+                    <i>Dj</i>
+                  </div>
+                </div>
+              </div>
+              <span class="cover-index">02 / EDUCATION</span>
+              <span class="build-badge" data-i18n="build">EN DÉVELOPPEMENT</span>
+            </div>
+
+            <div class="project-meta">
+              <span>DJANGO &middot; EDUCATION &middot; WEB</span>
+              <span>2027</span>
+            </div>
+            <h3>0'School <span>- Web</span></h3>
+            <p data-i18n="web">
+              Une plateforme de formation autodidacte pour rendre le développement web
+              accessible à tous. (Lancement prévu en Avril 2027)
+            </p>
+            <a class="spec-link" href="./assets/OSchool.pdf" download>
+              <span data-i18n="docs">voir le cahiers des charges</span>
+              <i class="bi bi-download" aria-hidden="true"></i>
+            </a>
+          </article>
+
+          <!-- Projet 03 : Direction Artistique -->
+          <article class="project project-wide">
+            <button
+              type="button"
+              class="project-image poster-cover"
+              id="open-gallery-btn"
+              aria-label="Voir mes œuvres"
+            >
+              <img src="./assets/chanteurs.png" alt="Affiche chanteurs" loading="lazy" />
+              <img src="./assets/danseurs.png" alt="Affiche danseurs" loading="lazy" />
+              <img src="./assets/gaming.png" alt="Affiche gaming" loading="lazy" />
+              <img src="./assets/échec.png" alt="Affiche échec" loading="lazy" />
+              <img src="./assets/exposants.png" alt="Affiche exposants" loading="lazy" />
+              <img src="./assets/miss.png" alt="Affiche miss" loading="lazy" />
+              <img src="./assets/parrainage.png" alt="Affiche parrainage" loading="lazy" />
+              <img src="./assets/quiz.png" alt="Affiche quiz" loading="lazy" />
+              <img src="./assets/communication.png" alt="Affiche communication" loading="lazy" />
+              <img src="./assets/gs.png" alt="Flyer GS" loading="lazy" />
+              <img src="./assets/drone.png" alt="flyer drone" loading="lazy" />
+              <span class="gallery-open" aria-hidden="true">
+                <i class="bi bi-arrow-up-right"></i>
+              </span>
+            </button>
+
+            <div class="wide-copy">
+              <h3 data-i18n="artTitle">Des talents. Une scène.</h3>
+              <p data-i18n="design">
+                Une direction visuelle pour révéler les talents du département Génie
+                Informatique de l'IUT de Douala, faire valoir les business des startups comme Le Groupe Sciences Tech, et la vente des drones DJI Air 3
+              </p>
+              <button type="button" class="button outline" id="open-gallery-btn-2">
+                <span data-i18n="works">Voir mes œuvres</span>
+                <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+              </button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section class="contact section" id="contact">
+        <div class="contact-copy">
+          <div class="phone-art">
+            <i class="bi bi-telephone" aria-hidden="true"></i>
+            <span aria-hidden="true">*</span>
+          </div>
+          <h2 data-i18n="together">Et si l'on créait\nquelque chose de beau ?</h2>
+          <p data-i18n="contactText">
+            Une idée, un projet ou simplement envie d'échanger? La conversation
+            commence ici.
+          </p>
+          <a
+            href="https://wa.me/237621631214"
+            target="_blank"
+            rel="noreferrer"
+            class="contact-number"
+          >
+            <span>+237 621 631 214</span>
+            <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+          </a>
+        </div>
+
+        <form id="whatsapp-form" action="mailto:ntouzooetiennerenel@gmail.com" method="POST">
+          <label>
+            <span data-i18n="name">Votre nom</span>
+            <input
+              required
+              type="text"
+              name="name"
+              autocomplete="name"
+              placeholder="ex: NTOUZO'O ETIENNE"
+            />
+          </label>
+
+          <label>
+            <span data-i18n="email">Votre email</span>
+            <input
+              required
+              type="email"
+              name="email"
+              autocomplete="email"
+              placeholder="vous@exemple.com"
+            />
+          </label>
+
+          <label>
+            <span data-i18n="messageLabel">Message</span>
+            <textarea
+              required
+              name="message"
+              rows="3"
+              data-i18n-placeholder="message"
+              placeholder="Parlez-moi de votre projet..."
+            ></textarea>
+          </label>
+
+          <button class="button primary" type="submit">
+            <span data-i18n="send">Envoyer le message</span>
+            <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+          </button>
+        </form>
+      </section>
+
+      <!-- RÉSEAUX SOCIAUX -->
+      <div class="social-row">
+        <span data-i18n="based">BASÉ À DOUALA, CAMEROUN</span>
+        <div>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://wa.me/237621631214"
+          >
+            <i class="bi bi-whatsapp" aria-hidden="true"></i>
+            <span>WhatsApp</span>
+            <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+          </a>
+
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://x.com/RenelDubinks"
+          >
+            <i class="bi bi-twitter-x" aria-hidden="true"></i>
+            <span>X / Twitter</span>
+            <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+          </a>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://web.facebook.com/profile.php?id=61580027571911"
+          >
+            <i class="bi bi-facebook" aria-hidden="true"></i>
+            <span>Facebook</span>
+            <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+          </a>
+
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.linkedin.com/in/etienne-renel-ntouzo-o-71755438b"
+          >
+            <i class="bi bi-linkedin" aria-hidden="true"></i>
+            <span>LinkedIn</span>
+            <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+          </a>
+
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <a href="#" class="footer-brand">RENEL</a>
+      <span data-i18n="footer">L'amour d'un travail bien fait</span>
+      <small>
+        &copy; <span id="current-year">2026</span> Renel.
+        <span data-i18n="rights">Tous droits réservés.</span>
+      </small>
+      <a href="#home" aria-label="Top">&uarr;</a>
+    </footer>
+
+    <!-- TOAST DE NOTIFICATION -->
+    <div role="status" class="toast" id="toast" hidden></div>
+
+    <!-- MODALE GALERIE DIRECTION ARTISTIQUE -->
+    <dialog id="gallery-dialog">
+      <div class="gallery-header">
+        <div>
+          <p data-i18n="gallery">Cérémonie de parrainage 2026</p>
+          <span id="gallery-counter">01 / 03</span>
+        </div>
+        <button type="button" id="close-gallery-btn" aria-label="Fermer">
+          <i class="bi bi-x-lg" aria-hidden="true"></i>
+        </button>
+      </div>
+
+      <div class="gallery-image">
+        <button type="button" id="gallery-prev" aria-label="Previous">
+          <i class="bi bi-chevron-left" aria-hidden="true"></i>
+        </button>
+        <img id="gallery-img" src="/assets/chanteurs.png" alt="Affiche chanteurs" />
+        <button type="button" id="gallery-next" aria-label="Next">
+          <i class="bi bi-chevron-right" aria-hidden="true"></i>
+        </button>
+      </div>
+
+      <a class="button primary" id="gallery-download" href="/assets/chanteurs.png" download>
+        <span data-i18n="download">Télécharger</span>
+        <i class="bi bi-download" aria-hidden="true"></i>
+      </a>
+    </dialog>
+
+    <script src="./js/main.js" defer></script>
+  </body>
+</html>
